@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中信房屋蘇建源學長｜誠信專業的房產顧問</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: #0066cc;
+      color: #fff;
+      padding: 1.5em;
+      text-align: center;
+    }
+    .video-container {
+      position: relative;
+      padding-top: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    nav {
+      text-align: center;
+      background: #005bb5;
+      padding: 0.5em;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x500/?house,real-estate,taipei') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+      font-size: 2em;
+    }
+    .section {
+      padding: 2em;
+      background: white;
+      margin: 2em auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      margin-top: 0;
+    }
+    .property-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5em;
+    }
+    .property-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .property-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .property-card .info {
+      padding: 1em;
+    }
+    .property-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      margin-bottom: 1em;
+      padding: 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: #0066cc;
+      color: white;
+      padding: 0.8em;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>蘇建源｜建源學長</h1>
+    <p>大安中正首選｜誠信．專業．值得信賴的房產顧問</p>
+  </header>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/6xLeEw5xRZk" 
+      title="古亭捷運站～高質感絕美電梯大三房" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen 
+      referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+  </div>
+
+  <nav>
+    <a href="#about">關於我</a>
+    <a href="#services">服務項目</a>
+    <a href="#properties">好屋推薦</a>
+    <a href="docs.html" target="_blank">購屋諮詢</a>
+    <a href="#contact">聯絡方式</a>
+  </nav>
+
+<div class="hero">
+  <div style="text-align: center;">
+    <img 
+      id="hero-image" 
+      src="中信名片.png" 
+      alt="中信房屋名片" 
+      style="width: 851px; height: 315px; margin-bottom: 1em; object-fit: cover;" 
+    />
+    <div>20年實戰經驗｜千萬經紀人</div>
+  </div>
+</div>
+
+
+
+
+  <div class="section" id="about">
+    <h2>關於我</h2>
+    <p>我是蘇建源，專注大安、中正區房地產，20年實戰經驗，提供高端住宅買賣與資產規劃，強調誠信溝通與透明資訊，打造值得信賴的房仲形象。</p>
+  </div>
+
+  <div class="section" id="services">
+    <h2>服務項目</h2>
+    <ul>
+      <li>住宅買賣仲介</li>
+      <li>高資產不動產規劃</li>
+      <li>房產價值分析與行情建議</li>
+      <li>不動產交易流程規劃</li>
+    </ul>
+  </div>
+
+  <!-- ✅ 好屋推薦區塊 -->
+  <div class="section" id="properties">
+    <h2>好屋推薦</h2>
+    <div class="property-list">
+      <div class="property-card">
+        <a href="https://www.591.com.tw/broker48124" target="_blank">
+          <img src="https://source.unsplash.com/400x300/?apartment,taipei" alt="物件一">
+          <div class="info">
+            <h3>中正區高樓景觀三房</h3>
+            <p>近捷運｜屋況優｜採光佳</p>
+          </div>
+        </a>
+      </div>
+      <div class="property-card">
+        <a href="https://www.591.com.tw/broker48124" target="_blank">
+          <img src="https://source.unsplash.com/400x300/?condo,taiwan" alt="物件二">
+          <div class="info">
+            <h3>大安區靜巷高質感宅</h3>
+            <p>社區管理完善｜稀有釋出</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>聯絡我</h2>
+    <p style="text-align: center;">
+      📞 0918-432-267<br>
+      📱 Line：andy08140911<br>
+      🏢 中信房屋 / 住商不動產 南門加盟店
+      <br>
+      <a href="https://www.facebook.com/0918432267andy/"><img src="facebook-48.png" alt="粉絲專頁" title="買屋"></a>
+      <a href="hhttps://www.instagram.com/0918432267andy/"><img src="instagram-48.png" alt="instagram" title="買屋"></a>
+      <a href="https://www.youtube.com/@%E8%98%87%E5%BB%BA%E6%BA%90-o2c"><img src="youtube-48.png" alt="youtube" title="買屋"></a>
+    </BR>
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 建源學長 不動產顧問｜All Rights Reserved
+  </footer>
+
+</body>
+</html>
