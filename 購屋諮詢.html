@@ -73,6 +73,7 @@
       border-radius: 8px;
       overflow: hidden;
       background: #fff;
+      text-align: center;
     }
     .property-card img {
       width: 100%;
@@ -130,14 +131,13 @@
     <a href="#about">關於我</a>
     <a href="#services">服務項目</a>
     <a href="#properties">好屋推薦</a>
-    <a href="#consult">購屋諮詢</a>
+    <a href="consult.html" target="_blank" rel="noopener noreferrer">購屋諮詢</a>
     <a href="#contact">聯絡方式</a>
   </nav>
 
-<div class="hero" style="flex-direction: column; text-align: center;">
-  <img src="0918432267_工作區域 1-01.png" alt="建源學長形象圖" style="max-width: 300px; margin-bottom: 1em; border-radius: 12px;">
-  <div>20年實戰經驗｜千萬經紀人</div>
-</div>
+  <div class="hero">
+    <div>20年實戰經驗｜千萬經紀人</div>
+  </div>
 
   <div class="section" id="about">
     <h2>關於我</h2>
@@ -153,46 +153,30 @@
       <li>不動產交易流程規劃</li>
     </ul>
   </div>
-  <!-- ✅ 好屋推薦區塊 -->
-<div class="section" id="properties">
-  <h2>好屋推薦</h2>
-  <div class="property-list">
-    
-    <a href="https://www.591.com.tw/broker48124" target="_blank" class="property-card">
-      <img src="https://source.unsplash.com/400x300/?apartment,taipei" alt="物件一">
-      <div class="info">
-        <h3>中正區高樓景觀三房</h3>
-        <p>近捷運｜屋況優｜採光佳</p>
-      </div>
-    </a>
 
-    <a href="https://www.591.com.tw/broker48124" target="_blank" class="property-card">
-      <img src="https://source.unsplash.com/400x300/?condo,taiwan" alt="物件二">
-      <div class="info">
-        <h3>大安區靜巷高質感宅</h3>
-        <p>社區管理完善｜稀有釋出</p>
-      </div>
-    </a>
-
-  </div>
-</div>
-
-  <!-- ✅ 購屋諮詢表單 -->
-  <div class="section" id="consult">
-    <h2>購屋諮詢</h2>
-    <p>歡迎留下您的需求，我會盡快與您聯繫：</p>
-    <form>
-      <input type="text" placeholder="姓名" required>
-      <input type="tel" placeholder="聯絡電話" required>
-      <input type="email" placeholder="電子信箱">
-      <textarea rows="4" placeholder="您的購屋需求（地區、預算、房型）" required></textarea>
-      <button type="submit">送出諮詢</button>
-    </form>
+  <div class="section" id="properties">
+    <h2>好屋推薦</h2>
+    <div class="property-list">
+      <a href="https://www.591.com.tw/broker48124" class="property-card" target="_blank">
+        <img src="https://source.unsplash.com/400x300/?apartment,taipei" alt="物件一">
+        <div class="info">
+          <h3>中正區高樓景觀三房</h3>
+          <p>近捷運｜屋況優｜採光佳</p>
+        </div>
+      </a>
+      <a href="https://www.591.com.tw/broker48124" class="property-card" target="_blank">
+        <img src="https://source.unsplash.com/400x300/?condo,taiwan" alt="物件二">
+        <div class="info">
+          <h3>大安區靜巷高質感宅</h3>
+          <p>社區管理完善｜稀有釋出</p>
+        </div>
+      </a>
+    </div>
   </div>
 
   <div class="section" id="contact">
     <h2>聯絡我</h2>
-    <p>📞 0918-432-267<br>📱 Line：andy08140911<br>🏢 中信房屋 / 住商不動產 南門加盟店</p>
+    <p style="text-align: center">📞 0918-432-267<br>📱 Line：andy08140911<br>🏢 中信房屋 / 住商不動產 南門加盟店</p>
   </div>
 
   <footer>

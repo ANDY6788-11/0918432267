@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>購屋諮詢表單</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1.5rem;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="form-container">
+    <h1>購屋諮詢表單</h1>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScCX-sWERM8ZJNZ6sVqV-BfZZcXJcoD69I9mxK1vltmfAgLAA/formResponse" method="POST" target="hidden_iframe">
+
+    <iframe src="https://www.youtube.com/embed/2m_5EI8L4d0" frameborder="0" width="100%" height="500"></iframe>
+      <label for="name">姓名</label>
+      <input id="name" type="text" name="entry.2020300197" placeholder="請輸入您的姓名" required>
+
+      <label for="phone">電話</label>
+      <input id="phone" type="text" name="entry.1937871233" placeholder="請輸入您的電話" required>
+
+      <label for="budget">預算</label>
+      <input id="budget" type="text" name="entry.1114429935" placeholder="請輸入預算範圍，例如 3000萬以內" required>
+
+      <label for="area">意願購屋區域</label>
+      <input id="area" type="text" name="entry.1674303345" placeholder="例如：大安、中正區" required>
+
+      <label for="purpose">購屋目的</label>
+      <select id="purpose" name="entry.1688491421" required>
+        <option value="">請選擇購屋目的</option>
+        <option value="自住">自住</option>
+        <option value="投資">投資</option>
+        <option value="置產">置產</option>
+      </select>
+
+      <button type="submit">送出</button>
+    </form>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+  </div>
+
+  <script>
+    const form = document.querySelector("form");
+    form.onsubmit = () => {
+      setTimeout(() => {
+        alert("表單已送出，感謝您的填寫！");
+        form.reset();
+      }, 500);
+    };
+  </script>
+</body>
+</html>
